@@ -1,10 +1,11 @@
 import { useState } from "react";
 import server from "./server";
 
-function Transfer({ address, setBalance }) {
+function Transfer({ address, setBalance,setMessage }) {
   const [sendAmount, setSendAmount] = useState("");
   const [recipient, setRecipient] = useState("");
-
+  const [signature,setSignature]=useState("")
+  const[recoverybit,setRecoverybit]=useState("")
   const setValue = (setter) => (evt) => setter(evt.target.value);
 
   async function transfer(evt) {
@@ -12,13 +13,17 @@ function Transfer({ address, setBalance }) {
 
     try {
       const {
-        data: { balance },
+        data: { balance,message },
       } = await server.post(`send`, {
         sender: address,
         amount: parseInt(sendAmount),
+        signature:signature,
+        recoverybit:parseInt(recoverybit),
         recipient,
       });
       setBalance(balance);
+      console.log("JSON message: ",message)
+      setMessage(JSON.parse(message))
     } catch (ex) {
       alert(ex.response.data.message);
     }
@@ -45,7 +50,22 @@ function Transfer({ address, setBalance }) {
           onChange={setValue(setRecipient)}
         ></input>
       </label>
-
+      <label>
+        Signature
+        <input
+          placeholder="Type the signature phrase please"
+          value={signature}
+          onChange={setValue(setSignature)}
+        ></input>
+      </label>
+      <label>
+        Recovery Bit
+        <input
+          placeholder="Type the recovery bit value please"
+          value={recoverybit}
+          onChange={setValue(setRecoverybit)}
+        ></input>
+      </label>
       <input type="submit" className="button" value="Transfer" />
     </form>
   );

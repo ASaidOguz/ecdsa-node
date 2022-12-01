@@ -1,0 +1,19 @@
+--------------------Generated Private and Public keys and Their addresses-----------------------
+
+Prıvate key:  c4429120d243ec311ae290d29530672ffaccb6dcb7e571a7f51f9398d5532fa4
+Public key:  042a0b0b64cbcaa2439476d3145f151aa6cde43f60299dc6f7f91efb1123a57296975a7fd52a9663b3567f120660ccb1d5902e34d2f9c045a735900dce6f52f87e
+Address:  1fd330bb5b065fe0bbdf9edd47e0e4edd1c3cdcb
+
+-------------------------->
+
+Prıvate key:  5f00bcc643dafbbd9ab4c13bb2d67522259aaf97f45633e94337459ba1e83a7f
+Public key:  04a8276b8b9a1bf462bf1041837166f82b5c0fb241b0b2ef803ba17e71be1219e62420ed8e71ada9b3120aa59cfc2ddea5121f6660d0d4d2430b10f9c62aab91dd
+Address:  b1ccf2a8343eea4316ceefe74571cf0ba393802b
+
+-------------------------->
+
+Prıvate key:  e531aae4a71539344ccaa5ce0e46a638b94ed1cb9215321cde2912ee7e8d5d05
+Public key:  04c5eb56b9148e06b6e3986b1b549f0a05a2dedd65be3cfb9f7ace2d2b04a720e7ddf34904d48d82c86dbe5329dfbb525b496148e442837f81124c2789cdc8dc8a
+Address:  287a2afd13d6542c8802c29b3b24369df1157eb8
+
+-------------------------->
